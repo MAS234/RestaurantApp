@@ -90,14 +90,11 @@ function ModalProducto() {
                 </button>
             </div>
 
-            <div >
-                <textarea className='mt-2 border-gray-700 w-full h-10 p-2' placeholder='comentario'></textarea>
-            </div>
 
             <button
             type='button'
             className='bg-green-600 hover:bg-green-500 hover:scale-95 px-5 py-2 mt-5 text-white font-bold rounded-sm uppercase duration-100'
-            onClick={() => handleAgregarPedido( {...producto, cantidad} ) }
+            onClick={() => handleAgregarPedido( {...producto, cantidad}, ) }
             >
                 {edicion ? "Guardar cambios" : "Añadir al pedido"}
             </button>
